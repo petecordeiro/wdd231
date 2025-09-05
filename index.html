@@ -1,14 +1,47 @@
 <html>
 
 <head>
-  <title>WDD 231</title>
+  <title>Peterson Cordeiro - WDD 231</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
+  <header>
+    <img src="images/logo.svg" alt="site logo" width="1" height="1">
+    <span>Peterson Cordeiro</span>
+    <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+
+  </header>
+
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li><a class="current" href="#">Home</a></li>
+      <li><a href="#">Chamber Assignment</a></li>
+      <li><a href="#">Final Project</a></li>
+    </ul>
+  </nav>
+
   <main>
     <h1>WDD 231</h1>
     <p>Peterson Cordeiro</p>
   </main>
+
+  <footer>
+    <ul class="social">
+      <li>
+        <a href="https://github.com/petecordeiro" target="_blank"><img src="images/github.svg" alt="github"></a>
+      </li>
+      <li>
+        <a href="https://teams.microsoft.com" target="_blank"><img src="images/teams.svg" alt="teams"></a>
+      </li>
+      <li>
+        <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="linkedin"></a>
+      </li>
+    </ul>
+  </footer>
+  <script src="js/navigation.js"></script>
 </body>
 
 </html>

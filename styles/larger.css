@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 720px) {
   header,
   main,
   nav,
@@ -12,7 +12,7 @@
   }
 
   footer {
-    margin-top: 64px;
+    margin: 64px auto;
   }
 
   .hamburger {
@@ -21,7 +21,9 @@
 
   .navigation {
     display: block;
-    margin-top: 8px;
+    grid-column: 3;
+    margin-right: -16px;
+    margin-bottom: 0;
   }
 
   .navigation ul {
@@ -33,7 +35,8 @@
 
   .navigation a {
     border-radius: 12px;
-    padding: 12px 24px;
+    padding: 12px;
+    border-radius: 200px;
     border: none;
   }
 }

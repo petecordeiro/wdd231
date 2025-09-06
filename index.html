@@ -1,10 +1,23 @@
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="utf-8">
   <title>Peterson Cordeiro - WDD 231</title>
+  <meta name="description" content="Peterson Cordeiro project page for BYU WDD 231">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="HTML, CSS, JavaScript, BYU, WDD231">
+  <meta name="author" content="Peterson Cordeiro">
+
   <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
 </head>
 
 <body>
@@ -12,20 +25,46 @@
     <img src="images/logo.svg" alt="site logo" width="1" height="1">
     <span>Peterson Cordeiro</span>
     <button id="nav-button" class="hamburger" aria-label="navigation"></button>
-
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a class="current" href="#">Home</a></li>
+        <li><a href="#">Chamber Assignment</a></li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav id="nav-bar" class="navigation">
-    <ul>
-      <li><a class="current" href="#">Home</a></li>
-      <li><a href="#">Chamber Assignment</a></li>
-      <li><a href="#">Final Project</a></li>
-    </ul>
-  </nav>
+
 
   <main>
-    <h1>WDD 231</h1>
-    <p>Peterson Cordeiro</p>
+    <h1>Home</h1>
+
+    <div class="container">
+      <section class="card about">
+        <h2>About me</h2>
+        <p>My name is Peterson Cordeiro and I'm from Brazil. I live in Curitiba with my wife and I like to design things
+          and play videogames.</p>
+        <p>After around two semesters and the BYU system transition, I'm back to try to keep going and get the bachelor
+          certificate.</p>
+      </section>
+
+      <section class="card profile">
+        <h2>Student photo</h2>
+        <img src="images/avatar.jpg" alt="peterson photo" class="avatar">
+      </section>
+    </div>
+
+    <section class="card courses" id="courses">
+      <h2>Web certificate courses</h2>
+      <nav class="filters">
+        <a href="#courses" id="all" class="selected">All</a>
+        <a href="#courses" id="wdd">WDD</a>
+        <a href="#courses" id="cse">CSE</a>
+      </nav>
+
+      <div class="courses-list"></div>
+      <p>The total credits being displayed is <span class="credits-shown"></span></p>
+    </section>
   </main>
 
   <footer>
@@ -40,8 +79,13 @@
         <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="linkedin"></a>
       </li>
     </ul>
+
+    <div class="details">
+      <p><span id="currentyear"></span> • Peterson Cordeiro • Brazil</p>
+      <p>Last modified: <span id="lastModified"></span></p>
+    </div>
   </footer>
-  <script src="js/navigation.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,42 @@
+header h1 {
+  grid-column: 1 / span 3;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.cards {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin: 20px 0;
+  gap: 32px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid #e6e7f5;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #f2f4ff;
+}
+
+section img {
+  max-width: 120px;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 12px;
+}
+
+section h2 {
+  color: #521291;
+  margin-bottom: 4px;
+}
+
+section p {
+  font-size: 14px;
+  color: #340066;
+}

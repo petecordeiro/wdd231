@@ -1,0 +1,67 @@
+{
+  "companies": [
+    {
+      "name": "Triangle Company",
+      "address": "110 Main St",
+      "phone_number": "123-456-7890",
+      "website_url": "trianglecompany.com",
+      "image_url": "images/company_logo1.jpg",
+      "membership_level": "Level 2 Silver",
+      "founded_year": 1888
+    },
+    {
+      "name": "Circle Company",
+      "address": "210 Main St",
+      "phone_number": "123-456-7890",
+      "website_url": "circlecompany.com",
+      "image_url": "images/company_logo2.jpg",
+      "membership_level": "Level 2 Silver",
+      "founded_year": 1932
+    },
+    {
+      "name": "Square Company",
+      "address": "310 Main St",
+      "phone_number": "123-456-7890",
+      "website_url": "squarecompany.com",
+      "image_url": "images/company_logo3.jpg",
+      "membership_level": "Level 2 Silver",
+      "founded_year": 1982
+    },
+    {
+      "name": "Star Company",
+      "address": "410 Main St",
+      "phone_number": "123-456-7890",
+      "website_url": "starcompany.com",
+      "image_url": "images/company_logo4.jpg",
+      "membership_level": "Level 2 Silver",
+      "founded_year": 1990
+    },
+    {
+      "name": "Horizons Company",
+      "address": "510 Main St",
+      "phone_number": "123-456-7890",
+      "website_url": "horizonscompany.com",
+      "image_url": "images/company_logo5.jpg",
+      "membership_level": "Level 2 Silver",
+      "founded_year": 1994
+    },
+    {
+      "name": "Tool Company",
+      "address": "610 Main St",
+      "phone_number": "123-456-7890",
+      "website_url": "toolcompany.com",
+      "image_url": "images/company_logo6.jpg",
+      "membership_level": "Level 2 Silver",
+      "founded_year": 1976
+    },
+    {
+      "name": "Nova Company",
+      "address": "710 Main St",
+      "phone_number": "123-456-7890",
+      "website_url": "novacompany.com",
+      "image_url": "images/company_logo7.jpg",
+      "membership_level": "Level 3 Silver",
+      "founded_year": 2025
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+@media only screen and (min-width: 720px) {
+  header,
+  main,
+  nav,
+  footer {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  header {
+    grid-template-columns: 44px auto;
+  }
+
+  footer {
+    margin: 64px auto;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+    grid-column: 3;
+    margin-right: -16px;
+    margin-bottom: 0;
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 16px;
+  }
+
+  .navigation a {
+    border-radius: 12px;
+    padding: 12px;
+    border-radius: 200px;
+    border: none;
+  }
+}

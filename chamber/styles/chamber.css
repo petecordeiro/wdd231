@@ -12,6 +12,45 @@ header h1 {
   margin: 20px 0;
 }
 
+/* Home */
+
+.spotlight {
+  width: calc(100% + 32px);
+  height: 400px;
+  background-image: url(../images/spotlight.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0 -16px 32px;
+}
+
+.spotlight > .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 900px;
+  height: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.spotlight > .content h1 {
+  color: #fff;
+  margin: 0 0 130px;
+}
+
+.highlights-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.weather,
+.events {
+  width: 100%;
+}
+
+/* Companies */
+
 .companies {
   display: grid;
   grid-gap: 0.5rem;
@@ -20,7 +59,9 @@ header h1 {
   gap: 32px;
 }
 
-.companies section {
+.companies section,
+.weather,
+.events {
   display: flex;
   flex-direction: column;
   justify-content: center;

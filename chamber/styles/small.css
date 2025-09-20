@@ -230,6 +230,23 @@ footer p {
     min-width: unset;
   }
 
+  .highlights-container {
+    flex-direction: column;
+  }
+
+  .company-highlights .mobile {
+    flex-flow: column;
+  }
+
+  .company-highlights ul li {
+    align-items: center;
+  }
+
+  /* .highlights-container .weather,
+  .highlights-container .events {
+    width: 100%;
+  } */
+
   .container,
   footer {
     flex-direction: column;

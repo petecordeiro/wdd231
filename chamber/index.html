@@ -20,7 +20,7 @@
 
   <script src="../scripts/navigation.js" defer></script>
   <script src="../scripts/date.js" defer></script>
-  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/openweather.js" defer></script>
 
   <meta property="og:title" content="Curitiba Chamber of Commerce">
   <meta property="og:description" content="Curitiba Chamber of Commerce for BYU WDD 231">
@@ -47,21 +47,59 @@
   <div class="spotlight">
     <div class="content">
       <h1>Curitiba Chamber of Commerce</h1>
+      <div class="spotlight-content">
+        <p>You and your company can be part of it</p>
+        <a href="join.html" class="button">Join the chamber</a>
+      </div>
     </div>
   </div>
 
   <main>
     <section class="highlights-container">
       <div class="weather">
-        Weather
+        <h2>Weather</h2>
+        <p>The current temperature in Curitiba, Brazil is <span id="current-temp"></span></p>
+        <figure>
+          <img id="weather-icon" src="" alt="">
+          <figcaption></figcaption>
+        </figure>
       </div>
       <div class="events">
-        Current events
+        <h2>Current events</h2>
+        <li>
+          <h3>Event on the bay</h3>
+          <span>September 27, 2025 at 10:00</span>
+          <p>A day of celebration for partnerships</p>
+        </li>
+        <li>
+          <h3>Business gathering</h3>
+          <span>September 27, 2025 at 14:00</span>
+          <p>The community of companies of Curitiba invites you to a special day</p>
+        </li>
       </div>
     </section>
 
-    <section class="companies">
-      <div id="companies" class="companies"></div>
+    <section class="company-highlights">
+      <h2>Company highlights</h2>
+      <p>A few companies that are part of the chamber.</p>
+      <ul class="mobile">
+        <li>
+          <img src="images/company_logo1.jpg" alt="Triangle company">
+          <p>Triangle company</p>
+          <span>triangle.com</span>
+        </li>
+        <li>
+          <img src="images/company_logo2.jpg" alt="Circle company">
+          <p>Circle company</p>
+          <span>circle.com</span>
+        </li>
+        <li>
+          <img src="images/company_logo3.jpg" alt="Square company">
+          <p>Square company</p>
+          <span>square.com</span>
+        </li>
+      </ul>
+      <a href="directory.html" class="button">See the full directory</a>
     </section>
 
   </main>

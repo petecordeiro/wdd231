@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Directory - Curitiba Chamber of Commerce</title>
-  <meta name="description" content="Curitiba Chamber of Commerce for BYU WDD 231">
+  <title>Join - Curitiba Chamber of Commerce</title>
+  <meta name="description" content="Join the Curitiba Chamber of Commerce for BYU WDD 231">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="HTML, CSS, JavaScript, BYU, WDD231">
   <meta name="author" content="Peterson Cordeiro">
@@ -14,13 +14,13 @@
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
   <link rel="stylesheet" href="styles/chamber.css">
+  <link rel="stylesheet" href="styles/join.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
 
   <script src="../scripts/navigation.js" defer></script>
   <script src="../scripts/date.js" defer></script>
-  <script src="scripts/directory.js" defer></script>
 
   <meta property="og:title" content="Curitiba Chamber of Commerce">
   <meta property="og:description" content="Curitiba Chamber of Commerce for BYU WDD 231">
@@ -37,17 +37,59 @@
     <nav id="nav-bar" class="navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a class="current" href="#">Directory</a></li>
-        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a class="current" href="#">Join</a></li>
         <li><a href="discovery.html">Discovery</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Directory of companies</h1>
-    <div id="companies" class="companies"></div>
+    <h1>Join the chamber of companies</h1>
+    <p>Fill out the necessary information, and we will get back to you.</p>
+
+    <form method="GET" action="thankyou.html" class="join-form">
+      <label>First Name <input type="text" name="first" required autocomplete="given-name"
+          title="Your First Name"></label>
+      <label>Last Name <input type="text" name="last" required autocomplete="family-name"
+          title="Your Last Name"></label>
+
+      <label for="title">Organizational Title
+        <input type="text" name="title" required autocomplete="organization-title" pattern="^[a-zA-Z -]{7,}$"
+          title="Please use only letters, hyphens, and spaces (minimum 7 characters)."></label>
+
+      <label>Email <input type="email" name="email" required placeholder="peterson@gmail.com" title="Your Email"
+          autocomplete="email"></label>
+      <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
+          placeholder="987-555-1234"></label>
+
+      <label>Organization Name <input type="text" name="organization" required autocomplete="organization"
+          title="Your Organization Name"></label>
+      <label>Organization Description <textarea name="description" required autocomplete="description"
+          title="Your Organization Description"></textarea></label>
+
+      <input type="hidden" id="timestamp" name="timestamp">
+
+      <label>Membership Level
+        <select name="membership" required>
+          <option value="">None</option>
+          <option value="NP">NP Membership is for non profit organizations and there is no fee.
+          </option>
+          <option value="Bronze">Bronze Membership
+          </option>
+          <option value="Silver">Silver Membership
+          </option>
+          <option value="Gold">Gold Membership
+          </option>
+      </label>
+
+      <input type="submit" value="Join the Chamber">
+    </form>
   </main>
+
+  <script>
+    document.getElementById('timestamp').value = new Date().toISOString();
+  </script>
 
   <footer>
     <section>

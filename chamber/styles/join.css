@@ -1,69 +1,81 @@
-form {
-  margin: 0;
-
-  label {
-    display: block;
-    font-size: 0.8rem;
-    color: #7f4900;
-    padding-top: 0.2rem;
-  }
-  h3 {
-    font-size: 0.9rem;
-    color: #7f4900;
-    margin: 1.5rem 0 0.2rem 0;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 0.5rem;
-    width: 250px;
-  }
-
-  input[type="text"],
-  input[type="tel"],
-  input[type="date"],
-  input[type="email"],
-  select {
-    display: block;
-    margin: 0.1rem 0 1rem 0;
-    padding: 0.3rem;
-    border: 1px solid #999;
-    border-radius: 4px;
-    border-left-width: 5px;
-    border-left-color: #555;
-    font-size: 1rem;
-    color: #3d405b;
-    width: 250px;
-  }
-
-  input:required {
-    border-left-color: #d70000;
-  }
-  input:focus {
-    border-left-color: black;
-    outline: none;
-  }
-  input:required:valid {
-    border-left-color: green;
-  }
-
-  input[type="submit"] {
-    border: none;
-    text-align: center;
-    background-color: #9e5b00;
-    color: white;
-    border-radius: 200px;
-    padding: 0.75rem 1.5rem;
-    margin: 2rem 0;
-    font-size: 1.2rem;
-    -webkit-appearance: none;
-    appearance: none;
-  }
+.join-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
-input:-webkit-autofill {
-  -webkit-text-fill-color: #3d405b;
+
+form,
+.join-container > section {
+  margin: 0;
+  border: 2px solid #ddd;
+  border-radius: 16px;
+  padding: 48px;
+  width: 48%;
+}
+
+.join-container > section {
+  background-color: white;
+  border: none;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-size: 0.8rem;
+  color: #7f4900;
+  padding-top: 0.2rem;
+}
+
+h3 {
+  font-size: 0.9rem;
+  color: #7f4900;
+  padding-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="email"],
+select {
+  display: block;
+  margin: 0.1rem 0 1rem 0;
+  padding: 0.3rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+  border-left-width: 5px;
+  border-left-color: #555;
+  font-size: 1rem;
+  color: #3d405b;
+  width: 100%;
+}
+
+input:required {
+  border-left-color: #d70000;
+}
+input:focus {
+  border-left-color: black;
+  outline: none;
+}
+input:required:valid {
+  border-left-color: green;
+}
+
+input[type="submit"] {
+  border: none;
+  text-align: center;
+  background-color: #9e5b00;
+  color: white;
+  border-radius: 200px;
+  padding: 0.75rem 1.5rem;
+  margin: 2rem 0 0;
+  font-size: 1.2rem;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 textarea {
   display: block;
-  width: 250px;
+  width: 100%;
   padding: 0.3rem;
   border: 1px solid #999;
   border-radius: 4px;
@@ -76,4 +88,105 @@ textarea {
   padding: 0 1rem;
   border: 1px solid #e07a5f;
   border-radius: 6px;
+}
+
+.join-container ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 32px 0;
+}
+
+.join-container ul li {
+  list-style-type: none;
+  background: #f6f0e9;
+  padding: 20px;
+  border-radius: 16px;
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeInRight 0.6s ease-out forwards;
+}
+
+.join-container ul li p {
+  margin: 0 0 16px;
+}
+
+.join-container button {
+  background: #9e5b00;
+  border: none;
+  color: white;
+  border-radius: 200px;
+  padding: 8px 16px;
+}
+
+/* Dialog */
+
+dialog {
+  max-width: 500px;
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 40px auto 0;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#closeModal {
+  float: right;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  color: #666;
+}
+
+.join-container li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.join-container li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.join-container li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.join-container li:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .join-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  form,
+  .join-container > section {
+    width: 100%;
+    padding: 24px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  dialog {
+    margin: 40px 16px 0;
+  }
 }

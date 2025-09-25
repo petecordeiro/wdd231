@@ -8,7 +8,7 @@ document.querySelector("#results").innerHTML = `
 <p>${joinInfo.get("first")} ${joinInfo.get("last")}</p>
 <p>Organizational title ${joinInfo.get("title")}</p>
 <p>Organization name ${joinInfo.get("organization")}</p>
-<p>Organization description ${joinInfo.get("longdescription")}</p>
+<p>Organization description ${joinInfo.get("description")}</p>
 <p>Membership type ${joinInfo.get("membership")}</p>
 <p>Your phone ${joinInfo.get("phone")}</p>
 <p>Your email is ${joinInfo.get("email")}</p>

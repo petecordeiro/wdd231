@@ -1,0 +1,52 @@
+{
+  "places": [
+    {
+      "name": "Botanical Garden",
+      "address": "110 Main St",
+      "description": "This beautiful botanical garden is a famous tourist spot. It's one of the landmarks of the city.",
+      "image_url": "images/place1.webp"
+    },
+    {
+      "name": "Tangua Park",
+      "address": "210 Main St",
+      "description": "A famous park in the city, know for it's beautiful views and peaceful atmosphere.",
+      "image_url": "images/place2.webp"
+    },
+    {
+      "name": "Barigui Park",
+      "address": "310 Main St",
+      "description": "The most park in the city, famous for it's capibaras who walk freely in the park.",
+      "image_url": "images/place3.webp"
+    },
+    {
+      "name": "Oscar Niemeyer Museum",
+      "address": "410 Main St",
+      "description": "MON, the museum dedicated to the famous brazilian architect Oscar Niemeyer is a hot spot for tourists.",
+      "image_url": "images/place4.webp"
+    },
+    {
+      "name": "Arame Opera",
+      "address": "510 Main St",
+      "description": "A monument to music, where many world famous artists have performed. Cozy atmostphere for families.",
+      "image_url": "images/place5.webp"
+    },
+    {
+      "name": "German Bosque",
+      "address": "610 Main St",
+      "description": "With a path and walk inspired by children books, the German Books is always filled with tourists and families.",
+      "image_url": "images/place6.webp"
+    },
+    {
+      "name": "Athletico Paranaense Arena",
+      "address": "710 Main St",
+      "description": "The stadium for the biggest football team in Paraná.",
+      "image_url": "images/place7.webp"
+    },
+    {
+      "name": "Memorial Ucraniano",
+      "address": "810 Main St",
+      "description": "A memorial for the Ukranian people in Paraná which is the largest outside Ukraine.",
+      "image_url": "images/place8.webp"
+    }
+  ]
+}

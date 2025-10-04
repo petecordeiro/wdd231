@@ -1,0 +1,95 @@
+#places {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.place-card {
+  display: grid;
+  grid-template-areas:
+    "name name"
+    "photograph description"
+    "photograph address"
+    "photograph learnmore";
+  overflow: hidden;
+  border: 1px solid #eee;
+  background-color: #fff;
+  padding: 16px;
+  gap: 16px;
+  border-radius: 8px;
+}
+
+.place-card figure {
+  grid-area: photograph;
+  width: 120px;
+}
+
+.place-card figure img {
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+}
+
+.place-card figure img:hover {
+  filter: saturate(180%);
+  transform: scale(120%);
+}
+
+.place-card h2 {
+  grid-area: name;
+}
+
+.place-card address {
+  grid-area: address;
+}
+
+.place-card p {
+  grid-area: description;
+}
+
+.place-card button {
+  grid-area: learnmore;
+  width: fit-content;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #9e5a00;
+  font-weight: 500;
+  border-radius: 200px;
+  border: none;
+}
+
+@media only screen and (max-width: 720px) {
+  #places {
+    grid-template-columns: 1fr;
+  }
+
+  .place-card {
+    grid-template-areas:
+      "name"
+      "photograph"
+      "description"
+      "address"
+      "learnmore";
+  }
+
+  .place-card figure {
+    width: 100%;
+  }
+
+  .place-card figure img {
+    border-radius: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .place-card figure img:hover {
+    filter: none;
+    transform: none;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .place-card button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Discovery - Curitiba Chamber of Commerce</title>
+  <meta name="description" content="Curitiba Chamber of Commerce for BYU WDD 231">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="HTML, CSS, JavaScript, BYU, WDD231">
+  <meta name="author" content="Peterson Cordeiro">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/chamber.css">
+  <link rel="stylesheet" href="styles/discover.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+
+  <script src="../scripts/navigation.js" defer></script>
+  <script src="../scripts/date.js" defer></script>
+  <script src="scripts/discover.js" defer></script>
+
+  <meta property="og:title" content="Curitiba Chamber of Commerce">
+  <meta property="og:description" content="Curitiba Chamber of Commerce for BYU WDD 231">
+  <meta property="og:url" content="https://petecordeiro.github.io/wdd231/chamber/directory.html">
+  <meta property="og:image" content="images/og-social.jpg">
+
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.svg" alt="site logo" width="1" height="1">
+    <span>Curitiba Chamber of Commerce</span>
+    <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a class="current" href="discovery.html">Discovery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Discovery</h1>
+    <div id="places"></div>
+  </main>
+
+  <footer>
+    <section>
+      <h4>Address</h4>
+      <address>
+        <p>Curitiba Chamber of Commerce</p>
+        <p>Main Street</p>
+        <p>contact@chambercommerce.com</p>
+        <p>+55 41 93300-3000</p>
+      </address>
+
+      <ul class="social">
+        <li>
+          <a href="https://youtube.com" target="_blank">
+            <img src="images/youtube.svg" alt="YouTube">
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.svg" alt="Twitter">
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com" target="_blank">
+            <img src="images/linkedin.svg" alt="LinkedIn">
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="details">
+      <p>WDD231 Class Project</p>
+      <p>Peterson Cordeiro</p>
+      <p><span id="currentyear"></span> • Peterson Cordeiro • Brazil</p>
+      <p>Last modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
